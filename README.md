@@ -2,7 +2,6 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-	<title>News Near You</title>
 </head>
 	<body>
 <h1>Local News</h1>
