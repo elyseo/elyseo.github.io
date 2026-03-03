@@ -10,5 +10,5 @@
 		A brand new boutique officially opened their doors in Danville. Bombshell Boutique is already creating excitement for local shoppers, as well as for local shop owners. 
 	</p>
 <p> 
-<a href=“NewsNearYou.pdf” target="_self">Read the Full Story</a>
+<a href=“WebDesign/NewsNearYou.pdf” target="_self">Read the Full Story</a>
 </p>
