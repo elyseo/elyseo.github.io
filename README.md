@@ -12,5 +12,3 @@
 <p> 
 <a href=“article.html” target="_self">Read the Full Story</a>
 </p>
-	<p>
-	<a href="gallery.html" target="_self">Click Here</a>
