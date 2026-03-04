@@ -14,9 +14,12 @@
     Download News Article 
 </a>
 </p>
-
+<hr>
+		<h2> Stay Informed</h2>
 <p>
-	To find more local or global news go to CNN
+Remember to stay informed about breaking news as well as national reports!
+</p>
+		<p>
 	<a href="https.//www.cnn.com"target=_blank">
 	Visit CNN for More News
 	</a>
