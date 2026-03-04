@@ -5,7 +5,7 @@
 </head>
 	<body>
 <h1>Local News</h1>
-	<h2> Featured Local Story
+	<h2> Featured Local Story</h2>
 	<p> 
 		A brand new boutique officially opened their doors in Danville. Bombshell Boutique is already creating excitement for local shoppers, as well as for local shop owners. 
 	</p>
