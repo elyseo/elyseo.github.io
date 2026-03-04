@@ -10,7 +10,7 @@
 		A brand new boutique officially opened their doors in Danville. Bombshell Boutique is already creating excitement for local shoppers, as well as for local shop owners. 
 	</p>
 <p> 
-<a href="WebDesign/NewsNearYou.pdf" target="_blank">
+<a href="WebDesign/NewsNearYou.pdf"target="_blank">
     Download News Article 
 </a>
 </p>
@@ -20,7 +20,9 @@
 Remember to stay informed about breaking news as well as national reports!
 </p>
 		<p>
-	<a href="https.//www.cnn.com"target=_blank">
+	<a href="https://www.cnn.com"target=_blank">
 	Visit CNN for More News
 	</a>
 </p>
+	</body>
+</html>
