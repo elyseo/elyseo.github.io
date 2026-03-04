@@ -14,3 +14,10 @@
     Download News Article 
 </a>
 </p>
+
+<p>
+	To find more local or global news go to CNN
+	<a href="https.//www.cnn.com"target=_blank">
+	Visit CNN for More News
+	
+</p>
