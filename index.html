@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-	<title>Local News</title>
+	<title>My News Hub</title>
 </head>
 	<body>
 <h1>Local News</h1>
