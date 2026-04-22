@@ -14,38 +14,64 @@
     margin: 10px; 
   }
  th {
-         border: 1px solid slategray;
-         padding: 10px;
+     border: 1px solid slategray;
+     padding: 10px;
+     background-color: Lightsteelblue;
+td {
+    border: 1px solid slategray;
+    padding: 10px
+    text-align: center;
+}
+     .time-column {
+         background-color: #F2C4CB;
+         font-weight: bold;
      }
 </style>
 </head>
   <body>
     <h1>Daily Schedule</h1>
+<table>
     <thead>
-      <tr>
-        <th>9am</th>
-        <th>10am</th>
-        <th>11am</th>
-        <th>12pm</th>
-        <th>1pm</th>
-        <th>2pm</th>
-        <th>3pm</th>
-        <th>4pm</th>
-      </tr>
+        <tr>
+            <th class="time-column">Time</th>
+            <th>Event</th>
+        </tr>
     </thead>
-      <tbody>
-          <tr>
-              <th>Grocery Shopping</th>
-              <th>Clean the House</th>
-              <th>Laundry</th>
-              <th>Make Lunch</th>
-              <th>Exercise</th>
-              <th>Relax/Read</th>
-              <th>Bake Cake</th>
-              <th>Make Dinner</th>
-          </tr>
-      </tbody>
-   
-  </body>
-  
+    <tbody>
+        <tr>
+            <td class="time-column">7am</td>
+            <td>Exercise</td>
+        </tr>
+        <tr>
+         <td class="time-column">8am</td>
+         <td>Make Breakfast/Eat</td>
+        </tr>
+        <tr>
+            <td class="time-column">9am</td>
+            <td>Clean House</td>
+        </tr>
+        <tr>
+            <td class="time-column">10am</td>
+            <td>Grocery Shopping</td>
+        </tr>
+        <tr>
+            <td class="time-column">11am</td>
+            <td>Read/Relax</td>
+        </tr>
+        <tr>
+        <td class="time-column">12pm</td>
+        <td>Make Lunch/Eat</td>
+        </tr>
+        <tr>
+            <td class="time-column">1pm</td>
+            <td>Bake Cake</td>
+        </tr>
+        <tr>
+            <td class="time-column">2pm</td>
+            <td>Read/Relax</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
 </html>
