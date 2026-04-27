@@ -5,13 +5,13 @@ body {
 }
 
 h1 {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 table {
   margin: 20px auto;
   border-collapse: collapse;
-  width: 80%
+  width: 80%;
   background: white;
 }
 
@@ -25,6 +25,11 @@ th {
   background-color: #333;
   color: white;
 }
+
+tr:last-child:hover {
+  font-weight:bold; 
+}
+
 /* Pseudo-class */
 tr:hover {
   background-color: #ddd;
