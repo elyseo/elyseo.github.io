@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+h1 {
+  margin: 20px 0;
+}
+/* Project Layout */
+.container {
+  display: grid;
+  grid-template-coloumns: repeat (3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+.project {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+  position: realitive;
+  border: 2px solid #ccc;
+}
+/* Football Field */
+.foorball {
+  background-image: url("football_field.jpg");
+  background-size: cover;
+}
+.football::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url("tic-tac-toe.png");
+  background-size: contain;
+  backround-repeat: no-repeat;
+  top: 50%;
+  left: 50%
+  transform: translate(-50%, -50%);
+}
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.grid::before {
+  content: "";
+  grid-column: span 3;
+}
+.grid div {
+  background: blue;
+}
+/* Absolute Position */
+.absolute-box {
+  background: lightgray;
+}
+.absolute-box::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: red;
+  top: 20px;
+  left: 20px;
+}
+/* Layered Shapes */
+.layered::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  top: 20px;
+  left: 20px;
+}
+.layed::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: red;
+  top: 60px;
+  left: 60px;
+}
+
+  
