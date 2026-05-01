@@ -6,32 +6,56 @@
 <link rel="stylesheet" href="Styles.css">
 </head>
 <body>
+    <header>
   <h1>Image Replication</h1>
-    <style>
-  div {
-    background-image: url(football_field.jpg)
-    border: 27px solid #000;
-    border-image: url(tic-tac-toe.png) 27 round;
-    background-repeat: no-repeat;
-    background-size: 150px;"
-  }
-</style>
-  <div class='container">
-      <!-- Project 1: Football Field -->
-      <div class="project football"></div>
-     
-      <!-- Project 2 -->
-      <div class="project grid"></div>
-
-      <!-- Project 3 -->
-      <div class="project flex-center"></div>
-
-      <!-- Project 4 -->
-      <div class project absolute-box"></div>
-
-      <!-- Project 5 -->
-      <div class="project overlay"></div>
-
-      <!-- Project 6 -->
-      <div class="project layered"></div>
+  <div class="rule"></div>
+   </header>
+<div class="grid">
+    <!-- Football Field -->
+    <div class="card">
+      <span class="badge">Project 1</span>
+        <h2>Football Field</h2>
+        <div class="p1-outer">
+            <div class="p1-inner">
+             <img src="football_field.jpg" alt="Football field"/>
+         </div>
+      </div>
+</div>
+    <!- Dinosaur -->
+    <div class="card">
+        <span class="badge">Project 2</span>
+        <h2>Dinosaur</h2>
+        <img class="p2-img" src="dinosaur.png" alt="Blue dinosaur hue-rotate"/>
+    </div>
+</div>
+    <!-- Seagull-->
+    <div class="card">
+        <span class="badge">Project 3</span>
+        <h2>Seagull</h2>
+        <div class="p3-frame">
+            <div class="p3-sky">
+                <img src="seagull.png" alt="Seagull with CSS Gradient Sky"/>
+            </div>
+        </div>
+    </div>
+    <!-- Butterfly -->
+    <div class="card">
+        <span class="badge">Project 4</span>
+        <h2>Butterfly Hue Change</h2>
+        <div class="p5-wrap">
+            <img src="butterfly.jpg" alt="Butterfly with blue hue"/>
+        </div>
+    </div>
+    <!-- Theater -->
+    <div class="card">
+        <span class="badge">Project 6</span>
+        <h2>Theater Stage</h2>
+        <div class="p6-outer">
+            <img src="theater_stage.jpg" alt="Theater Stage with Blur"/>
+            <div class="p6-label"><span>Presenting</span></div>
+        </div>
+    </div>
 </body>
+</html>
+        
+        
