@@ -67,7 +67,7 @@ header p {
   width: 100%;
   background-image: url('tic-tac-toe.png');
   background-repeat: repeat;
-  background-size: 55px 55px
+  background-size: 55px 55px;
   padding: 30px 22px;
 }
 .p1-inner img {
