@@ -70,5 +70,271 @@
     from { opacity: 0; transformL translateY(-60px) skewY(-4deg); }
     to { opacity: 1; transform: translateY(0) skewY(0); }
   }
-  
+  @keyframes glitch {
+    0%, 90%, 100% {transform: translateX(3px); opacity: 0;}
+    91% { transform: translateX(-4px); opacity: 1;}
+    93% { transform: translateX(4px); opacity: 1;}
+    95% { transform: translateX(-2px); opacity: 0;}
+    }
+    .subtitle {
+        font-size: 0.75rem;
+        letter-spacing: 0.3em;
+        color: var(--muted);
+        text-transform: uppercase;
+        margin-top: 12px;
+        animation: fadeUp 0.8s 0.4s both;
+    }
+    .bar { 
+        width: 60px;
+        height: 3px;
+        background: var(--accent);
+        margin: 16px auto 0;
+        animation: barGrow 0.6s 0.8s cubic-bezier(0.22,1,0.36,1) both;
+        transform-orgin: left;
+    }
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(12px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .legend {
+        text-align: center;
+        margin: 44px auto 32px;
+        font-size: 0.65rem;
+        letter-spaceing: 0.25em;
+        text-transform: uppercase;
+        color: var(--muted);
+        animation: fadeUp 0.8s 1s both;
+    }
+    .legend span {
+        display: inline-block;
+        width: 10px; height: 10px;
+        background: var(--accent);
+        margin-right: 6px;
+        vertical-align: middle;
+        border-radius: 1px;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 0 24px;
+    }
+    .card {
+        height: var(--card-h);
+        position: relative;
+        cursor: pointer;
+        animation: cardIn 0.6s both;
+    }
+    .card:nth-child(1) { animation-delay: 0.10s; }
+    .card:nth-child(2) { animation-delay: 0.18s; }
+    .card:nth-child(3) { animation-delay: 0.26s; }
+    .card:nth-child(4) { animation-delay: 0.34s; }
+    .card:nth-child(5) { animation-delay: 0.42s; }
+    .card:nth-child(6) { animation-delay: 0.50s; }
+    .card:nth-child(7) { animation-delay: 0.58s; }
+    .card:nth-child(8) { animation-delay: 0.66s; }
+
+    @keyframes cardIn {
+        from { opacity: 0; transform: translateY(30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .card-inner {
+        width: 100% height: 100%;
+        position: relative;
+        transform-style: presere-3d;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .card: hover .card-inner { transform: rotateY(180deg); }
+
+    .face {
+        position: absolute;
+        inset: 0;
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+        border: 1px solid var(--border);
+        border-radius: 4px;
+        padding: 24px 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .front { background: var(--surface); }
+
+    .card-tag {
+        font-size: 0.6rem;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: var(--muted)
+    }
+    .card-q {
+        font-size: 0.95rem;
+        font-weight: 500;
+        line-height: 1.45;
+        color: var(--accent);
+    }
+    .hint {
+        font-size: 0.6rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(mutted);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .hint::before {
+        content: '';
+        display: inline-block;
+        width: 18px; height: 1px;
+        background: var(--muted);
+    }
+    .back {
+        background: var(--accent);
+        transform: rotateY(180deg);
+        border-color: var(--accent);
+    }
+    .back .card-tag { color: rgba(0,0,0,0.45); }
+
+    .card-a {
+        font-size: 0.9rem;
+        line-height: 1.55;
+        color: #0e0e0e;
+        font-weight: 500;
+    }
+    .back .hint { color: rgba(0,0,0,0.4); }
+    .back .hint::before { background: rgba(0,0,0,0.3); }
+
+    .card.alt .back {
+        background: var(--accent2);
+        border-color: var(--accent2);
+    }
 </style>
+</head>
+    <body>
+
+        <header>
+            <h1 data-text="CSS ANIMATION">CSS CARD ANIMATIONS</h1>
+            <p class="subtitle">Hover over a card to reveal the definition</p>
+            <div class="bar"></div>
+        </header>
+<p class="legend><span></span> 8 properties - flip to releal</p>
+<div class="grid">
+    
+    <div class="card>
+        <div class="card-inner">
+          <div class="face front">
+              <span class="card-tag">shorthand</span>
+              <p class="card-q">animation</p>
+              <span class="hint">hover to reveal</span>
+          </div>
+        <div class="face back">
+            <span class="card-tag">Definition</span>
+            <p class="card-a">Shorthand property for all animation properties.</p>
+            <span class="hint">hover away to flip back</span>
+        </div>
+    </div>
+    </div>
+
+        <div class="card alt">
+            <div class="card-inner">
+                <div class="face front">
+                    <span class=card-tag">Property</span>
+                    <p class="card-q">animation-name</p>
+                    <span class="hint">hover to reveal</span>
+                </div>
+                <div class=" face back">
+                    <span class="card-tag"> Definition</span>
+                    <p class="card-a">Specifies the name of the keyframe you want to bind to the selector.</p>
+                    <span class="hint">hover away to flip back</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class"card-inner">
+                <div class="face front">
+                    <span class="card-tag">Property</span>
+                    <p class="card-q">animation-duration</p>
+                    <span class="hint">hover to reveal</span>
+                </div>
+                <div class="face back">
+                    <span class="card-tag">Deinition</span>
+                    <p class="card-a">Specifies how many seconds or milliseconds an animation takes to complere.</p>
+                    <span class="hint">hover away to flip back</span>
+                </div>
+            </div>
+        </div>
+        <div class="card alt">
+            <div class="card-inner">
+                <div class="face front">
+                    <span class="card-tag">Property</span>
+                    <p class="card-q">animation-timing-function</p>
+                    <span class="hint">hover to reveal</span>
+                </div>
+                <div class=face back">
+                    <span class="card-tag">Definition</span>
+                    <p class="card-a">Specifies the speed curve of the animation</p>
+                    <span class="hint">hover away to filp back</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="face forn">
+                    <span class="card-tag">Property</span>
+                    <p class="card-q">animation-delay</p>
+                    <span class="hint">hover to reveal</span>
+                </div>
+                <div class="face back">
+                    <span class="card-tag">Definition</span>
+                    <p class="card-a">Specifies a delay before the animation will start.</p>
+                    <span class="hint">hover away to flip back</span>
+                </div>
+            </div>
+        </div>
+        <div class="card alt">
+            <div class="card-inner">
+                <div class="face front">
+                    <span class="card-tag">Property</span>
+                    <p class="card-q">animation-iteration-count</p>
+                    <span class="hint">hover to reveal</span>
+                </div>
+                <div class="face back">
+                    <span class="card-tag">Definition</span>
+                    <p class="card-a">Specifies how many times an animation should be played.</p>
+                    <span class="hint">hover away to flip back</span>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div calss="face front">
+                    <span class="card-tag">Property</span>
+                    <p class="card-q">animation-direction</p>
+                    <span class="hint">hover to reveal</span>
+                </div>
+                <div class="face back">
+                    <span class="card-tag">Definition</span>
+                    <p class="card-a>Specifies wheather or not the animation should play in reverse on alternate cycles.</
+                        <span class="hint">hover away to flip back</p>
+                </div>
+            </div>
+        </div>
+        <div class="card alt">
+            <div class="card-inner">
+                <div class="face front">
+                    <span class"card-tag">Property</span>
+                    <p class="card-q">animation-fill-mode</p>
+                    <span class="hint">hover to reveal</span>
+                </div>
+                <div class="face back">
+                    <span class="card-tag">Definition</span>
+                    <p class="card-a">Specifies waht values are applied by the animation outside the time it is executing.</p>
+                    <span claa="hint">hover away to flip back</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </body>
+</html>
