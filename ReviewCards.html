@@ -90,7 +90,7 @@
         background: var(--accent);
         margin: 16px auto 0;
         animation: barGrow 0.6s 0.8s cubic-bezier(0.22,1,0.36,1) both;
-        transform-origin;
+        transform-origin: left;
     }
     @keyframes fadeUp {
         from { opacity: 0; transform: translateY(12px); }
@@ -178,7 +178,7 @@
         font-size: 0.6rem;
         letter-spacing: 0.2em;
         text-transform: uppercase;
-        color: var(muted);
+        color: var(--muted);
         display: flex;
         align-items: center;
         gap: 6px;
@@ -218,7 +218,7 @@
             <p class="subtitle">Hover over a card to reveal the definition</p>
             <div class="bar"></div>
         </header>
-<p class="legend"><span></span> 8 properties - flip to releal</p>
+<p class="legend"><span></span> 8 properties - flip to reveal</p>
 <div class="grid">
     
     <div class="card">
@@ -234,7 +234,7 @@
             <span class="hint">hover away to flip back</span>
         </div>
     </div>
-    </div>
+</div>
 
         <div class="card alt">
             <div class="card-inner">
@@ -316,7 +316,7 @@
                 <div class="face back">
                     <span class="card-tag">Definition</span>
                     <p class="card-a">Specifies wheather or not the animation should play in reverse on alternate cycles.</p>
-                        <span class="hint">hover away to flip back</span
+                        <span class="hint">hover away to flip back</span>
                 </div>
             </div>
         </div>
