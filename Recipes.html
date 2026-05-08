@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Artisan bread recipes from Baking Frenzy — sourdough loaves, focaccia, rye breads, and more all made with a live starter" />
+  <meta name="keywords" content="sourdough recipes, focaccia recipe, rye bread, artisan bread recipes, sourdough starter recipes, treats, desserts, baking" />
+  <meta name="Elyse Oldham" content="Baking Frenzy" />
+  <title>Recipes | Baking Frenzy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Baking Frenzy Home">
+        <span class="logo-icon" aria-hidden="true">🌾</span> Baking Frenzy
+      </a>
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sourdough.html">My Sourdough</a>
+        <a href="recipes.html" class="active" aria-current="page">Recipes</a>
+        <a href="techniques.html">Techniques</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-label="Recipes introduction">
+      <div class="container">
+        <span class="eyebrow">The Collection</span>
+        <h1>Recipes</h1>
+        <p class="lead">Everything here is made with a live sourdough starter. Some are quick, some take two days — all are worth it.</p>
+      </div>
+    </section>
+
+    <!-- Recipe Index Table -->
+    <section class="section--sm" aria-labelledby="recipe-index-heading">
+      <div class="container">
+        <span class="eyebrow">Quick Reference</span>
+        <h2 id="recipe-index-heading">Recipe Overview</h2>
+        <p style="margin-bottom: 1.5rem;">A table of all recipes — useful for planning your bake week.</p>
+
+        <div class="table-wrap" role="region" aria-label="Recipe comparison table" tabindex="0">
+          <table>
+            <caption style="caption-side: top; padding: 0.75rem; font-size: 0.85rem; color: var(--muted); text-align: left; font-style: italic;">
+              All recipes on this site with key details at a glance.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Recipe</th>
+                <th scope="col">Type</th>
+                <th scope="col">Hydration</th>
+                <th scope="col">Difficulty</th>
+                <th scope="col">Total Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Cranberry Pecan Sourdough</strong></td>
+                <td>Sourdough</td>
+                <td>75%</td>
+                <td>Intermediate</td>
+                <td>~48 hrs</td>
+              </tr>
+              <tr>
+                <td><strong>Rosemary Focaccia</strong></td>
+                <td>Flatbread</td>
+                <td>80%</td>
+                <td>Beginner</td>
+                <td>~18 hrs</td>
+              </tr>
+              <tr>
+                <td><strong>Dark Rye</strong></td>
+                <td>Rye Loaf</td>
+                <td>85%</td>
+                <td>Advanced</td>
+                <td>~48 hrs</td>
+              </tr>
+              <tr style="border: 2px dashed var(--crust-light);">
+                <td colspan="5" style="text-align:center; color: var(--muted); font-style: italic; padding: 1.25rem;">
+                  <td><strong>Cinnamon Roll Focaccia</strong></td>
+                <td>Flatbread</td>
+                <td>85%</td>
+                <td>Beginner</td>
+                <td>~6 hrs</td>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Recipe Cards Grid -->
+    <section class="section" aria-labelledby="recipes-heading">
+      <div class="container">
+        <div class="section-title">
+          <span class="eyebrow">All Recipes</span>
+          <h2 id="recipes-heading">The Bakes</h2>
+        </div>
+
+        <div class="grid-3">
+
+          <!-- Recipe Card 1 -->
+          <article class="card">
+            <img
+              class="card-img"
+              src="SourdoughPecan.png"
+              alt="A golden sourdough loaf cut in half, full of cranberries"
+              loading="lazy"
+              width="600"
+              height="375"
+            />
+            <div class="card-body">
+              <span class="card-tag">Loaf</span>
+              <h3>Cranberry Pecan Sourdough</h3>
+              <p>The loaf I want to bake every week. A simple 75% hydration, with an open, glossy crumb.</p>
+              <ul class="list-simple" style="margin-top: 1rem;" aria-label="Country sourdough quick facts">
+                <li>75% hydration</li>
+                <li>100% all purpose flour</li>
+                <li>20% levain</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span><strong>Difficulty:</strong> Intermediate</span>
+              <a href="sourdough.html" aria-label="Go to the full country sourdough recipe">Full Recipe →</a>
+            </div>
+          </article>
+
+          <!-- Recipe Card 2 -->
+          <article class="card">
+            <img
+              class="card-img"
+              src="https://images.unsplash.com/photo-1574085733277-851d9d856a3a?w=600&q=75"
+              alt="Focaccia bread in a rectangular pan, dimpled surface topped with fresh rosemary and flaky sea salt"
+              loading="lazy"
+              width="600"
+              height="375"
+            />
+            <div class="card-body">
+              <span class="card-tag">Flatbread</span>
+              <h3>Rosemary Focaccia</h3>
+              <p>My most forgiving bake. Olive oil, rosemary, and flaky salt on a pillowy sourdough base. Hard to mess up, impossible to stop eating.</p>
+              <ul class="list-simple" style="margin-top: 1rem;" aria-label="Focaccia quick facts">
+                <li>80% hydration</li>
+                <li>All white flour</li>
+                <li>Perfect for beginners</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span><strong>Difficulty:</strong> Beginner</span>
+              <span class="tag tag-sage">Coming Soon</span>
+            </div>
+          </article>
+
+          <!-- Recipe Card 3 — Placeholder -->
+          <article class="card" style="border: 2px dashed var(--crust-light); box-shadow: none; background: var(--crumb);">
+            <div class="card-body recipe-placeholder" style="height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem 2rem; background: transparent; border: none;">
+              <span class="placeholder-icon" aria-hidden="true">🍞</span>
+              <h3>Your Next Recipe</h3>
+              <p>Add your own recipe card here when you're ready to share it.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- ✏️ RECIPE PLACEHOLDER AREA -->
+        <div style="margin-top: 3rem;">
+          <h3 style="margin-bottom: 1.5rem;">More Recipes — Coming as I Bake Them</h3>
+          <div class="recipe-placeholder">
+            <span class="placeholder-icon" aria-hidden="true">📖</span>
+            <h3>Your Recipes Will Live Here</h3>
+            <p>As you bake and document, add more recipe cards above. This section is intentionally left open for you to grow the collection over time.</p>
+          </div>
+        </div>
+        <!-- ✏️ END PLACEHOLDER -->
+
+      </div>
+    </section>
+
+    <hr class="divider" />
+
+    <!-- Video Section — Required element -->
+    <section class="section" aria-labelledby="video-heading" style="background: var(--parchment);">
+      <div class="container">
+        <span class="eyebrow">Watch &amp; Learn</span>
+        <h2 id="video-heading">Shaping a Sourdough Boule</h2>
+        <p style="margin-bottom: 2rem;">Shaping is the step most beginners struggle with. This video walks through the technique I use — the same one shown in my method.</p>
+
+        <!-- Video — Embedded, accessible -->
+        <div class="grid-2">
+          <div>
+            <div class="video-wrap" role="region" aria-label="Shaping sourdough video">
+              <!--
+                TO ADD YOUR OWN VIDEO:
+                Option 1 — YouTube embed:
+                <iframe
+                  src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                  title="How to shape a sourdough boule — step by step"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+
+                Option 2 — Local video file:
+                <video controls preload="metadata" poster="your-poster.jpg">
+                  <source src="../media/your-video.mp4" type="video/mp4" />
+                  <track kind="captions" src="../media/captions.vtt" srclang="en" label="English captions" default />
+                  <p>Your browser doesn't support HTML video.
+                     <a href="../media/your-video.mp4">Download the video</a> instead.
+                  </p>
+                </video>
+              -->
+
+              <!-- Placeholder embed — replace with your own -->
+              <iframe
+                src="https://www.youtube.com/embed/IxVSlizlt-s"
+                title="How to shape a sourdough boule — step by step tutorial for home bakers"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+                aria-label="Video: How to shape a sourdough boule"
+              ></iframe>
+            </div>
+            <div class="video-caption" role="note" aria-label="Video caption">
+              <span aria-hidden="true">🎬</span>
+              <span>Video: Shaping technique for a round sourdough loaf (boule). Captions and transcript available via the YouTube player.</span>
+            </div>
+          </div>
+
+          <div>
+            <h3>What to Watch For</h3>
+            <p>Shaping is about building surface tension, not kneading. The dough should feel like you're dragging it across the bench, not pressing it down.</p>
+
+            <div class="tip-box" style="margin-top: 1.5rem;">
+              <p class="tip-label">🎯 Key Technique</p>
+              <p>A light dusting of flour on the bench — too much and the dough won't grip. You want just enough that it slides when you want it to and grips when you need it to.</p>
+            </div>
+
+            <!-- ✏️ YOUR OWN NOTES ON THE SHAPING STEP -->
+            <div class="recipe-placeholder" style="margin-top: 1.5rem;">
+              <span class="placeholder-icon" aria-hidden="true">✍️</span>
+              <h3>Your Shaping Notes</h3>
+              <p>What tips or tricks have you discovered for your shaping process? Add them here.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="site-logo" aria-label="Wild Crumb Home">🌾 Wild Crumb</a>
+          <p>A personal sourdough and artisan baking journal. Made with flour, water, salt, and time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sourdough.html">My Sourdough</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="techniques.html">Techniques</a></li>
+            <li><a href="ingredients.html">Ingredients</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="sourdough.html">Sourdough Starter</a></li>
+            <li><a href="techniques.html">Stretch &amp; Fold</a></li>
+            <li><a href="techniques.html">Scoring &amp; Shaping</a></li>
+            <li><a href="ingredients.html">Flour Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>External Resources</h4>
+          <ul>
+            <li><a href="https://www.thefreshloaf.com" target="_blank" rel="noopener noreferrer">The Fresh Loaf Forum</a></li>
+            <li><a href="https://www.kingarthurbaking.com" target="_blank" rel="noopener noreferrer">King Arthur Baking</a></li>
+            <li><a href="https://www.breadbakersapprentice.com" target="_blank" rel="noopener noreferrer">Bread Baker's Apprentice</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Wild Crumb. A personal baking journal.</p>
+        <p>Built with flour, patience, and HTML.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
