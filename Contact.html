@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Baking Frenzy — ask a sourdough question, share a baking tip, or just say hello." />
+  <meta name="keywords" content="contact Baking Frenzy, sourdough questions, baking community, bread baking help" />
+  <meta name="author" content="Baking Frenzy" />
+  <title>Contact | Baking Frenzy</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="site-logo" aria-label="Baking Frenzy Home">
+        <span class="logo-icon" aria-hidden="true">🌾</span> Baking Frenzy
+      </a>
+      <nav class="site-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sourdough.html">My Sourdough</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="techniques.html">Techniques</a>
+        <a href="ingredients.html">Ingredients</a>
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-label="Contact page introduction">
+      <div class="container">
+        <span class="eyebrow">Say Hello</span>
+        <h1>Get in Touch</h1>
+        <p class="lead">Got a sourdough question? A bake that went sideways? Or just want to share a photo of your loaf? I'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="section" aria-labelledby="contact-form-heading">
+      <div class="container grid-2" style="gap: 4rem;">
+
+        <!-- FORM -->
+        <div>
+          <h2 id="contact-form-heading" style="margin-bottom: 1.75rem;">Send a Message</h2>
+
+          <form
+            class="form-card"
+            action="#"
+            method="post"
+            novalidate
+            aria-label="Contact form"
+          >
+
+            <!-- Row 1: Name & Email -->
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">
+                  First Name <span class="required" aria-label="required">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="Jane"
+                  autocomplete="given-name"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Baker"
+                  autocomplete="family-name"
+                />
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label for="email">
+                Email Address <span class="required" aria-label="required">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="jane@example.com"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-hint"
+              />
+              <p class="form-note" id="email-hint">I'll only use this to reply to your message. No mailing lists.</p>
+            </div>
+
+            <!-- Topic — Select -->
+            <div class="form-group">
+              <label for="topic">
+                What's this about? <span class="required" aria-label="required">*</span>
+              </label>
+              <select id="topic" name="topic" required aria-required="true">
+                <option value="" disabled selected>Choose a topic…</option>
+                <option value="starter-help">Help with my starter</option>
+                <option value="recipe-question">Recipe question</option>
+                <option value="technique-help">Technique question</option>
+                <option value="share-bake">I want to share my bake</option>
+                <option value="feedback">Site feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label for="message">
+                Your Message <span class="required" aria-label="required">*</span>
+                <span class="hint">(be as detailed as you like)</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your bake, your question, or whatever's on your mind…"
+                required
+                aria-required="true"
+                rows="6"
+              ></textarea>
+            </div>
+
+            <!-- Baking Experience — Radio Group -->
+            <fieldset class="fieldset-styled">
+              <legend>How long have you been baking sourdough?</legend>
+              <div class="radio-group" role="radiogroup" aria-label="Sourdough baking experience level">
+                <label class="radio-label">
+                  <input type="radio" name="experience" value="beginner" /> Just starting out (0–6 months)
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="experience" value="intermediate" /> Getting the hang of it (6 months – 2 years)
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="experience" value="experienced" /> I've been at it a while (2+ years)
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="experience" value="not-yet" /> I haven't started yet
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Checkboxes -->
+            <fieldset class="fieldset-styled">
+              <legend>What kind of baking do you do? <span class="hint">(tick all that apply)</span></legend>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="baking-type" value="sourdough" /> Sourdough loaves
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="baking-type" value="focaccia" /> Focaccia &amp; flatbreads
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="baking-type" value="enriched" /> Enriched breads (brioche, rolls)
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="baking-type" value="pastry" /> Pastry &amp; cakes
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="baking-type" value="other" /> Other
+                </label>
+              </div>
+            </fieldset>
+
+            <!-- Submit -->
+            <div style="margin-top: 0.5rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; padding: 1rem;">
+                Send Message 🍞
+              </button>
+              <p class="form-note" style="margin-top: 0.75rem; text-align: center;">
+                Fields marked <span style="color: var(--crust);">*</span> are required. I aim to reply within a few days.
+              </p>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div>
+          <figure style="margin-bottom: 2rem;">
+            <img
+              src="Sourdoughpecan.png"
+              alt="Freshly baked bread cooling on a wooden board"
+              loading="lazy"
+              width="700"
+              height="466"
+            />
+            <figcaption>Fresh from the oven — this is the moment I bake for every single week.</figcaption>
+          </figure>
+
+          <div class="tip-box" style="margin-top: 1.5rem;">
+            <p class="tip-label">📬 Response Time</p>
+            <p>I usually reply within 2–3 days. If you've got a baking emergency (it happens!), The Fresh Loaf Forum often gets you an answer within hours.</p>
+          </div>
+
+          <div class="pullquote" style="margin-top: 1.5rem;">
+            <p>"A bad day of baking is still better than a good day of not baking."</p>
+            <cite>— Every baker, ever</cite>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="site-logo" aria-label="Baking Frenzy Home">🌾 Baking Frenzy</a>
+          <p>A personal sourdough and artisan baking journal. Made with flour, water, salt, and time.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sourdough.html">My Sourdough</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="techniques.html">Techniques</a></li>
+            <li><a href="ingredients.html">Ingredients</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Topics</h4>
+          <ul>
+            <li><a href="sourdough.html">Sourdough Starter</a></li>
+            <li><a href="techniques.html">Stretch &amp; Fold</a></li>
+            <li><a href="techniques.html">Scoring &amp; Shaping</a></li>
+            <li><a href="ingredients.html">Flour Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>External Resources</h4>
+          <ul>
+            <li><a href="https://www.thefreshloaf.com" target="_blank" rel="noopener noreferrer">The Fresh Loaf Forum</a></li>
+            <li><a href="https://www.kingarthurbaking.com" target="_blank" rel="noopener noreferrer">King Arthur Baking</a></li>
+            <li><a href="https://www.breadbakersapprentice.com" target="_blank" rel="noopener noreferrer">Bread Baker's Apprentice</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Baking Frenzy. A personal baking journal.</p>
+        <p>Built with flour, patience, and HTML.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
