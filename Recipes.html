@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Artisan bread recipes from Baking Frenzy — sourdough loaves, focaccia, rye breads, and more all made with a live starter" />
   <meta name="keywords" content="sourdough recipes, focaccia recipe, rye bread, artisan bread recipes, sourdough starter recipes, treats, desserts, baking" />
-  <meta name="Elyse Oldham" content="Baking Frenzy" />
+  <meta name="author" content="Elyse Oldham" />
   <title>Recipes | Baking Frenzy</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -48,9 +48,7 @@
 
         <div class="table-wrap" role="region" aria-label="Recipe comparison table" tabindex="0">
           <table>
-            <caption style="caption-side: top; padding: 0.75rem; font-size: 0.85rem; color: var(--muted); text-align: left; font-style: italic;">
-              All recipes on this site with key details at a glance.
-            </caption>
+            <caption>All recipes on this site with key details at a glance.</caption>
             <thead>
               <tr>
                 <th scope="col">Recipe</th>
@@ -82,14 +80,12 @@
                 <td>Advanced</td>
                 <td>~48 hrs</td>
               </tr>
-              <tr style="border: 2px dashed var(--crust-light);">
-                <td colspan="5" style="text-align:center; color: var(--muted); font-style: italic; padding: 1.25rem;">
-                  <td><strong>Cinnamon Roll Focaccia</strong></td>
+              <tr>
+                <td><strong>Cinnamon Roll Focaccia</strong></td>
                 <td>Flatbread</td>
                 <td>85%</td>
                 <td>Beginner</td>
                 <td>~6 hrs</td>
-                </td>
               </tr>
             </tbody>
           </table>
@@ -123,7 +119,7 @@
               <span class="card-tag">Loaf</span>
               <h3>Cranberry Pecan Sourdough</h3>
               <p>The loaf I want to bake every week. A simple 75% hydration, with an open, glossy crumb.</p>
-              <ul class="list-simple" style="margin-top: 1rem;" aria-label="Country sourdough quick facts">
+              <ul class="list-simple" style="margin-top: 1rem;" aria-label="Cranberry pecan sourdough quick facts">
                 <li>75% hydration</li>
                 <li>100% all purpose flour</li>
                 <li>20% levain</li>
@@ -131,7 +127,7 @@
             </div>
             <div class="card-footer">
               <span><strong>Difficulty:</strong> Intermediate</span>
-              <a href="sourdough.html" aria-label="Go to the full country sourdough recipe">Full Recipe →</a>
+              <a href="sourdough.html" aria-label="Go to the full cranberry pecan sourdough recipe">Full Recipe →</a>
             </div>
           </article>
 
@@ -162,14 +158,20 @@
           </article>
 
           <!-- Recipe Card 3 -->
-          <article class="card" style="border: 2px dashed var(--crust-light); box-shadow: none; background: var(--crumb);">
-            <div class="card-body recipe-placeholder" style="height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3rem 2rem; background: transparent; border: none;">
-              <span class="placeholder-icon" aria-hidden="true">🍞</span>
+          <article class="card">
+            <div class="card-body">
+              <span class="card-tag">Loaf</span>
               <h3>Dark Rye Loaf</h3>
-              <p>Delicious when I want a nuttier bread </p>
-              <li>85% hydration</li>
-              <li>45% dark rye flour 65% all purpose flour</li>
-              <li>Advanced </li>
+              <p>Delicious when I want a nuttier bread.</p>
+              <ul class="list-simple" style="margin-top: 1rem;" aria-label="Dark rye quick facts">
+                <li>85% hydration</li>
+                <li>45% dark rye flour, 55% all purpose flour</li>
+                <li>Advanced</li>
+              </ul>
+            </div>
+            <div class="card-footer">
+              <span><strong>Difficulty:</strong> Advanced</span>
+              <span class="tag tag-sage">Coming Soon</span>
             </div>
           </article>
 
@@ -181,7 +183,7 @@
           <div class="recipe-placeholder">
             <span class="placeholder-icon" aria-hidden="true">📖</span>
             <h3>Cinnamon Roll Focaccia</h3>
-            <p>My favorite foccacia when I want something savory and sweet. The perfect amount of sweetness for a focaccia, topped with a simple frosting.</p>
+            <p>My favorite focaccia when I want something savory and sweet. The perfect amount of sweetness for a focaccia, topped with a simple frosting.</p>
           </div>
         </div>
 
@@ -190,29 +192,30 @@
 
     <hr class="divider" />
 
-    <!-- Video Section — Required element -->
+    <!-- Video Section -->
     <section class="section" aria-labelledby="video-heading" style="background: var(--parchment);">
       <div class="container">
         <span class="eyebrow">Watch &amp; Learn</span>
         <h2 id="video-heading">Shaping a Sourdough Boule</h2>
         <p style="margin-bottom: 2rem;">Shaping is the step most beginners struggle with. This video walks through the technique I use — the same one shown in my method.</p>
 
-       <div class="grid-2">
-  <div>
-    <div class="video-wrap" role="region" aria-label="Shaping sourdough video">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/IWA0RAAsBHg?si=UCZWF1tPVzrn0TNS"
-        title="How to shape a sourdough boule — step by step"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        loading="lazy"
-      ></iframe>
-    </div>
-  </div>
+        <div class="grid-2">
+          <div>
+            <div class="video-wrap" role="region" aria-label="Shaping sourdough video">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/IWA0RAAsBHg?si=UCZWF1tPVzrn0TNS"
+                title="How to shape a sourdough boule — step by step"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+
           <div>
             <h3>What to Watch For</h3>
             <p>Shaping is about building surface tension, not kneading. The dough should feel like you're dragging it across the bench, not pressing it down.</p>
@@ -221,11 +224,12 @@
               <p class="tip-label">🎯 Key Technique</p>
               <p>A light dusting of flour on the bench — too much and the dough won't grip. You want just enough that it slides when you want it to and grips when you need it to.</p>
             </div>
+
             <div class="recipe-placeholder" style="margin-top: 1.5rem;">
               <span class="placeholder-icon" aria-hidden="true">✍️</span>
-              <h3> Shaping Notes</h3>
-              <p>I have found that lightly floured hands are best when shaping the dough. </p>
-            </div>                        
+              <h3>Shaping Notes</h3>
+              <p>I have found that lightly floured hands are best when shaping the dough.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -237,7 +241,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="site-logo" aria-label="Baking Frenzy">🌾 Baking Frenzy</a>
+          <a href="index.html" class="site-logo" aria-label="Baking Frenzy Home">🌾 Baking Frenzy</a>
           <p>A personal sourdough and artisan baking journal. Made with flour, water, salt, and time.</p>
         </div>
         <div class="footer-col">
